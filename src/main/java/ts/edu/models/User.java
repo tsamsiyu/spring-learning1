@@ -2,8 +2,9 @@ package ts.edu.models;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
-public class User {
+public class User implements Serializable {
 
     @Size(min = 3, max = 45, message = "{name.size.error}")
     @NotNull
